@@ -903,7 +903,7 @@ footer a{
 }
 .first-footer::before{
     content: "";
-    border: 1px solid #DCE2E8;
+    border-bottom: 1px solid #DCE2E8;
     width: 407px;
     position: absolute;
     top: 33px;
@@ -911,7 +911,7 @@ footer a{
 }
 .first-footer::after{
     content: "";
-    border: 1px solid #DCE2E8;
+    border-bottom: 1px solid #DCE2E8;
     width: 407px;
     position: absolute;
     top: 33px;
@@ -966,7 +966,7 @@ html[dir=rtl] .second-footer .social-link:last-of-type{
 }
 .second-footer .social::after{
     content: "";
-    border: 1px solid #DCE2E8;
+    background:#DCE2E8;
     width: 1px;
     height: 63px;
     position: absolute;
@@ -1193,6 +1193,8 @@ html[dir=rtl] .third-footer img{
         min-width: 100%;
         padding: 10px 15px;
         box-shadow: none;
+        opacity: 1;
+        visibility: visible;
     }
     html[dir=rtl] .big-menu .dropdown-content{
         text-align: right;
