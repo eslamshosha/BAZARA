@@ -226,6 +226,7 @@ html[dir=rtl] .nav-header .chevron-down::after{
 .nav-header figure{
     margin: 0;
     transform: translateX(-30%);
+    width: 183px;
 }
 .nav-header figure img{
     width: 100%;
@@ -1211,7 +1212,7 @@ html[dir=rtl] .third-footer img{
     
     .nav-head .click-search {
         position: absolute;
-        top: 8px;
+        top: 7px;
         right: 15px;
         background-color: transparent;
         border: none;
@@ -1365,14 +1366,15 @@ html[dir=rtl] .third-footer img{
         bottom: 45px;
     }
     .main-slider .main-item{
-    clip-path: polygon(100% 0, 100% 96%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 97%, 0 100%, 0 0);
     }
     /*                     main section                           */
     /*                     deatail section                      */
     .details-box{
         padding: 55px 0 0;
-        clip-path: polygon(0 3%, 100% 0, 100% 98%, 0% 100%);
+        clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
         margin-bottom: 75px;
+        background-color: #fff;
     }
     .details-box .details-span{
         font-size: 16px;
@@ -1381,7 +1383,7 @@ html[dir=rtl] .third-footer img{
         display: none;
     }
     .details-box .image-details{
-        clip-path: polygon(0 2%, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
         width: 100%;
         height: 100%;
         margin: 0 auto
@@ -1421,7 +1423,7 @@ html[dir=rtl] .third-footer img{
     
     /*                             footer                          */
     footer {
-        clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
     }
     .first-footer::before,
     .first-footer::after,
@@ -1448,6 +1450,9 @@ html[dir=rtl] .third-footer img{
     }
     .first-footer{
         margin-bottom: 45px;
+    }
+    .first-footer img{
+        width: 183px;
     }
     .second-footer .social{
         order: 1;
@@ -1498,13 +1503,7 @@ html[dir=rtl] .third-footer img{
     }
     /*                             footer                          */
 }
-/*logo in small size*/
 
-@media (max-width: 300px){
-    .nav-header figure{
-        width: 120px;
-    }
-}
 /*                                    media query                                    */
 
 
