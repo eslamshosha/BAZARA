@@ -44,12 +44,31 @@
                 <div class="nav-header">
                     <div class="navgition">
                         <div class="nav-head">
-                            <h3 class="fixall nav-title">القايمة الرئيسية</h3>
-                            <a class="fixall close-btn">
-                                <i class="fas fa-times"></i>
-                            </a>
+                            <div class="first-head">
+                                <div class="empty-div"></div>
+                                <img src="images/logo.png" alt="img-logo">
+                                <a class="fixall close-btn">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                            <div class="search-mob">
+                                <input type="text" class="search-input" placeholder="ابحث">
+                                <button class="click-search"><span class="lnr lnr-magnifier"></span></button>
+                            </div>
                         </div>
                         <ul class="big-menu list-unstyled">
+                            <li class="cat-li hide-big">
+                                <a class="cat-anchor fixall" href="#">
+                                    الرئيسية
+                                </a>
+                            </li>
+                            <li class="cat-li dropdown hide-big">
+                                <a class="lang-word chevron-down cat-anchor">حسابى</a>
+                                <div class="dropdown-content">
+                                    <a class="cat-drop" href="#">تسجيل دخول</a>
+                                    <a class="cat-drop" href="#">حساب جديد</a>
+                                </div>   
+                            </li>
                             <li class="cat-li dropdown">
                                 <a class="lang-word chevron-down cat-anchor">منتجاتنا</a>
                                 <div class="dropdown-content">
@@ -58,7 +77,7 @@
                                     <a class="cat-drop" href="#">Moka Moka</a>
                                     <a class="cat-drop" href="#">Moka Moka</a>
                                 </div>   
-                        </li>
+                            </li>
                             <li class="cat-li">
                                 <a class="cat-anchor fixall" href="#">
                                     عروضنا
@@ -99,7 +118,7 @@
                             <div class="search-box">
                               <div class="search-bar">
                                 <input type="text" class="search-input" placeholder="ابحث">
-                                <button class="click-search"><i class="fas fa-search"></i></button>
+                                <button class="click-search"><span class="lnr lnr-magnifier"></span></button>
                               </div>
                             </div>
                             <div class="menu">
@@ -108,7 +127,7 @@
                         </div>
                     </div>
                     <figure class="img-logo">
-                        <a href="#"><img src="images/logo.png"></a>
+                        <a href="#"><img src="images/logo.png" class="img-fluid"></a>
                     </figure>
                     <div class="header-icons">
                         <div class="search-rool">
@@ -118,14 +137,14 @@
                             <div class="search-box">
                               <div class="search-bar">
                                 <input type="text" class="search-input" placeholder="ابحث">
-                                <button class="click-search"><i class="fas fa-search"></i></button>
+                                <button class="click-search"><span class="lnr lnr-magnifier"></span></button>
                               </div>
                             </div>
                             <div class="menu">
                               <span class="menu-icon open-menu"></span>
                             </div>
                         </div>
-                        <div class="dropdown cat-anchor">
+                        <div class="dropdown cat-anchor user-to">
                             <div class=" add-to">
                                 <span class="lnr lnr-user"></span>
                             <div class="dropdown-content">
@@ -393,7 +412,7 @@
                 <img src="images/logo.png" alt="footer-logo" class="img-fluid">
             </div>  
             <div class="second-footer">
-                <div class="nav-foot-cont">
+                <div class="nav-foot-cont first-order">
                     <ul class="nav-foot list-unstyled">
                         <li class="nav-foot-li">
                             <a href="#" class="nav-foot-link">من نحن</a>
@@ -426,7 +445,7 @@
                         <i class="fab fa-youtube"></i>
                     </a>
                 </div>
-                <div class="nav-foot-cont">
+                <div class="nav-foot-cont second-order">
                     <ul class="nav-foot list-unstyled">
                         <li class="nav-foot-li">
                             <a href="#" class="nav-foot-link">قسائم الهدايا</a>

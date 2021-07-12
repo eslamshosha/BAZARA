@@ -48,7 +48,7 @@ $(document).ready(function() {
 		autoplayTimeout: 4000,
 		rtl: true,
 		margin: 20,
-		navText: ["<i class='fas fa-chevron-right'></i>", "<i class='fas fa-chevron-left'></i>"],
+		navText: ["<span class='lnr lnr-chevron-right'></span>", "<span class='lnr lnr-chevron-left'></span>"],
 		responsiveClass: true,
 		responsive: {
 			0: {
@@ -85,7 +85,7 @@ $(document).ready(function() {
 		autoplayTimeout: 4000,
 		margin: 15,
 		rtl: true,
-		navText: ["<i class='fas fa-chevron-right'></i>", "<i class='fas fa-chevron-left'></i>"],
+		navText: ["<span class='lnr lnr-chevron-right'></span>", "<span class='lnr lnr-chevron-left'></span>"],
 		responsiveClass: true,
 		responsive: {
 			0: {
