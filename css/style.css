@@ -812,6 +812,7 @@ html[dir=rtl] .product-slider .item-button .btn-cart{
 .product-slider .owl-carousel .owl-dots {
     position: relative;
     text-align: center;
+    margin-top: 25px;
     transition: all 0.4s ease-in-out;
 }
 
@@ -854,7 +855,7 @@ html[dir=rtl] .product-slider .item-button .btn-cart{
     position: relative;
     max-width: 100%;
     background-image: url("../images/big-img.jpg");
-    min-height: 540px;
+    min-height: 350px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -885,7 +886,7 @@ html[dir=rtl] .product-slider .item-button .btn-cart{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     text-transform: uppercase;
     z-index: 3;
 }
@@ -1116,7 +1117,7 @@ html[dir=rtl] .third-footer img{
     .navgition {
         display: block;
         position: fixed;
-        left: -1500px;
+        left: 0px;
         top: 0;
         bottom: 0;
         width: 100%;
@@ -1124,14 +1125,19 @@ html[dir=rtl] .third-footer img{
         background-color: rgb(3, 30, 77, .9);
         transition: .4s;
         z-index: 200;
+        opacity: 0;
+        visibility: hidden;
+        overflow-y: auto;
+        transition: all .3s ease-in-out;
     }
-    html[dir=rtl] .navgition{
+    /* html[dir=rtl] .navgition{
         left: 0;
-        right: -1500px;
-    }
+        right: 0px;
+    } */
     
     .reset-left {
-        left: 0;
+        opacity: 1;
+        visibility: visible;
     }
     html[dir=rtl] 
     .reset-left {
@@ -1170,7 +1176,7 @@ html[dir=rtl] .third-footer img{
         color: #fff;
         font-size: 24px;
         flex: 1;
-        text-align: end;
+        text-align: start;
     }
     .nav-head .search-mob{
         position: relative;
@@ -1365,8 +1371,8 @@ html[dir=rtl] .third-footer img{
     /*                     deatail section                      */
     .details-box{
         padding: 55px 0 0;
-        clip-path: polygon(0 3%, 100% 0, 100% 95%, 0% 100%);
-        margin-bottom: 20px;
+        clip-path: polygon(0 3%, 100% 0, 100% 98%, 0% 100%);
+        margin-bottom: 75px;
     }
     .details-box .details-span{
         font-size: 16px;
@@ -1375,7 +1381,7 @@ html[dir=rtl] .third-footer img{
         display: none;
     }
     .details-box .image-details{
-        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 2%, 100% 0, 100% 100%, 0% 100%);
         width: 100%;
         height: 100%;
         margin: 0 auto
@@ -1397,7 +1403,13 @@ html[dir=rtl] .third-footer img{
     .product-slider.slider-two{
         margin-bottom: 75px;
     }
+    .product-slider.slider-two .product-image{
+        margin-top: 0;
+    }
     /*                      big image section         */
+    .big-image {
+        clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
+    }
     .big-image{
         margin-bottom: 75px;
     }
@@ -1409,7 +1421,7 @@ html[dir=rtl] .third-footer img{
     
     /*                             footer                          */
     footer {
-        clip-path: polygon(0 2%, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
     }
     .first-footer::before,
     .first-footer::after,
@@ -1451,6 +1463,7 @@ html[dir=rtl] .third-footer img{
     .second-footer .social{
         transform: translateX(-50%);
         left: 50%;
+        width: 100%;
     }
     html[dir=rtl] .second-footer .social {
         transform: translateX(50%);
@@ -1486,11 +1499,7 @@ html[dir=rtl] .third-footer img{
     /*                             footer                          */
 }
 /*logo in small size*/
-@media (max-width: 480px){
-    .nav-header figure{
-        width: 140px;
-    }
-}
+
 @media (max-width: 300px){
     .nav-header figure{
         width: 120px;
