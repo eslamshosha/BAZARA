@@ -1388,6 +1388,9 @@ html[dir=rtl] .third-footer img{
         height: 100%;
         margin: 0 auto
     }
+    .details-box .image-details img{
+        height: 240px;
+    }
     /*                     deatail section                      */
     
     /*                     product slider section                           */
