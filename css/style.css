@@ -226,7 +226,6 @@ html[dir=rtl] .nav-header .chevron-down::after{
 .nav-header figure{
     margin: 0;
     transform: translateX(-30%);
-    width: 183px;
 }
 .nav-header figure img{
     width: 100%;
@@ -1095,6 +1094,7 @@ html[dir=rtl] .third-footer .pay-img{
     }
     .nav-header figure{
         transform: translateX(0);
+        width: 183px;
     }
     html[dir=rtl] .nav-header figure {
         transform: translateX(0);
