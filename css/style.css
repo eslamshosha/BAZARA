@@ -615,11 +615,16 @@ html[dir=rtl] .add-to .dropdown-content{
 /*                       image-details section                    */
 
 .details-box{
-    background-color: #f5f6f7;
     text-align: center;
-    padding: 112px 200px 0;
-    clip-path: polygon(0 6%, 100% 0, 100% 45%, 77% 50%, 77% 74%, 23% 79%, 23% 55%, 0 60%);
     position: relative;
+}
+.details-box .details-cont{
+    height: 532px;
+    padding: 112px 200px 0;
+    background-color: #f5f6f7;
+    clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
+    position: relative;
+    margin-bottom: 265px;
 }
 
 .details-box .details-span{
@@ -632,29 +637,38 @@ html[dir=rtl] .add-to .dropdown-content{
     position: relative;/*to make z-index work*/
     z-index: 2;
 }
+.details-box .details-aspect{
+    position: absolute;
+    bottom: -145px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .details-box .image-details{
     clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
-    width: 615px;
-    height: 615px;
+    width: 555px;
     margin: 0 auto;
+    padding-bottom: 71.75%;
+    position: relative;
 }
-.details-box .image-details .simpleParallax{
-    width: fit-content;
-    margin: 0 auto;
-}
+
 .details-box .image-details img{
     object-fit: cover;
+    max-width: 100%;;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 }
-.details-box::after{
+.details-cont::after{
     content: "";
     background: url("../images/flower.png");
     position: absolute;
-    top: -13%;
+    top: -25%;
     left: -9%;
     width: 456px;
     height: 444px;
+    z-index: 1;
 }
 
 
@@ -672,6 +686,7 @@ html[dir=rtl] .add-to .dropdown-content{
 .product-slider .product-image{
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 40px;
 }
 .product-slider.slider-two .product-image{
     margin-top: 40px;
@@ -726,6 +741,7 @@ html[dir=rtl] .item {
     transition: all 0.4s ease-in-out;
     max-height: 30px;/*give max height to limit user*/
     text-align: center;
+    line-height: 1.2;
 }
 
 .item-content .item-name:hover {
@@ -812,7 +828,7 @@ html[dir=rtl] .product-slider .item-button .btn-cart{
 .product-slider .owl-carousel .owl-dots {
     position: relative;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 16px;
     transition: all 0.4s ease-in-out;
 }
 
@@ -854,8 +870,6 @@ html[dir=rtl] .product-slider .item-button .btn-cart{
     margin-bottom: 85px;
     position: relative;
     max-width: 100%;
-    background-image: url("../images/big-img.jpg");
-    min-height: 350px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -873,6 +887,15 @@ html[dir=rtl] .product-slider .item-button .btn-cart{
     opacity: 0.4;
     z-index: 2;
 }
+.big-image .big-cont{
+    position: relative;
+    height: 545px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
 .big-image a{
     text-decoration: none;
 }
@@ -882,13 +905,9 @@ html[dir=rtl] .product-slider .item-button .btn-cart{
     color: #fff;
     text-align: center;
     margin: 0;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    z-index: 3;
+    text-transform: capitalize;
+    /* width: 100%; */
+    
 }
 
 /*                        big-image section                    */
@@ -933,18 +952,19 @@ footer a{
 .second-footer li a{
     text-decoration: none;
 }
-.second-footer li{
+.second-footer li a {
     font-family: "TajawalRegular";
     font-size: 15px;
+    display: inline-block;
     color: #00355f;
     margin-bottom: 15px;
     text-align: center;
     transition: all .3s ease-in-out;
 }
-.second-footer li:last-of-type{
+.second-footer li a:last-of-type{
     margin-bottom: 0;
 }
-.second-footer li:hover{
+.second-footer li a:hover{
     color: #286090;/*hover*/
 }
 .second-footer .social-link{
@@ -978,12 +998,15 @@ html[dir=rtl] .second-footer .social-link:last-of-type{
     width: 1px;
     height: 63px;
     position: absolute;
-    bottom: 0;
-    left: 50%;
+    top: 50%;
+    left: 48%;
     transform: translateX(-50%)
 }
+html[dir=rtl] .second-footer .social::after{
+    left: 52%;
+}
 html[dir=rtl] .second-footer .social{
-    transform: translateX(10%);
+    transform: translateX(5%);
 }
 .newsletter{
     text-align: center;
@@ -1091,6 +1114,9 @@ html[dir=rtl] .third-footer .pay-img{
     .navgition .dropdown-content{
         display: none;
         transition: none;
+    }
+    .nav-header{
+        padding: 20px 0 18px;
     }
     .nav-header figure{
         transform: translateX(0);
@@ -1286,6 +1312,8 @@ html[dir=rtl] .third-footer .pay-img{
     }
     .header-info a{
         line-height: 30px;
+    }
+    html[dir=ltr] .header-info a{
         font-size: 11px;
     }
     .big-menu .lang-section{
@@ -1374,23 +1402,35 @@ html[dir=rtl] .third-footer .pay-img{
     }
     /*                     main section                           */
     /*                     deatail section                      */
-    .details-box{
-        padding: 55px 0 0;
-        clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
-        margin-bottom: 75px;
+    .section-details{
+        overflow: hidden;
+    }
+    .details-box .details-cont{
+        padding: 35px 15px 15px;
+        clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+        margin-bottom: 0px;
         background-color: #fff;
+        text-align: justify;
+        text-align-last: center;
+        height: auto;
     }
     .details-box .details-span{
-        font-size: 16px;
+        font-size: 20px;
+        margin-bottom: 30px;
     }
-    .details-box::after{
+    .details-cont::after{
         display: none;
     }
-    .details-box .image-details{
-        clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
+    .details-box .details-aspect{
         width: 100%;
-        height: 100%;
-        margin: 0 auto
+        padding: 0 15px;
+        bottom: auto;
+        position: relative;
+    }
+
+    .details-box .image-details{
+        clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
+        width: 100%;
     }
     /*                     deatail section                      */
     
@@ -1416,8 +1456,11 @@ html[dir=rtl] .third-footer .pay-img{
     .big-image {
         clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
     }
+    .big-image .big-cont{
+        height: 360px;
+    }
     .big-image{
-        margin-bottom: 75px;
+        margin-bottom: 65px;
     }
     .big-image .big-h{
         font-size: 30px;
@@ -1427,7 +1470,7 @@ html[dir=rtl] .third-footer .pay-img{
     
     /*                             footer                          */
     footer {
-        clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
     }
     .first-footer::before,
     .first-footer::after,
