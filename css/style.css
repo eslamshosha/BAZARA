@@ -424,7 +424,7 @@ html[dir=rtl] .top-header .add-to{
     transition: all 0.3s ease-in-out;
 }
 html[dir=rtl] .add-to .dropdown-content{
-    left: 40%;
+    left: 0%;
 }
 .top-header .lang-section{
     display: none;
