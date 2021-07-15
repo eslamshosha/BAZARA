@@ -1199,7 +1199,7 @@ html[dir=rtl] .third-footer .pay-img{
         margin-bottom: 15px;
     }
     .nav-head img{
-        width: 185px;
+        width: 183px;
         filter : brightness(0) invert(1);
         flex: 1;
     }
