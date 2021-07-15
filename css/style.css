@@ -998,7 +998,7 @@ html[dir=rtl] .second-footer .social-link:last-of-type{
     width: 1px;
     height: 63px;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 48%;
     transform: translateX(-50%)
 }
@@ -1183,7 +1183,7 @@ html[dir=rtl] .third-footer .pay-img{
     .nav-head {
         display: flex;
         flex-direction: column;
-        height: 170px;
+        height: 200px;
         color: #fff;
         background-color: transparent;
         width: 100%;
@@ -1494,6 +1494,9 @@ html[dir=rtl] .third-footer .pay-img{
         bottom: -45%;
         left: 50%;
         transform: translateX(-50%);
+    }
+    html[dir=rtl] .second-footer::after{
+        left: 51%;
     }
     .first-footer{
         margin-bottom: 45px;
