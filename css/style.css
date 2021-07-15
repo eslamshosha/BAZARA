@@ -1153,7 +1153,7 @@ html[dir=rtl] .third-footer .pay-img{
         bottom: 0;
         width: 100%;
         height: 100%;
-        background-color: rgb(3, 30, 77, .9);
+        background-color: rgb(3, 30, 77, .969);
         transition: .4s;
         z-index: 200;
         opacity: 0;
